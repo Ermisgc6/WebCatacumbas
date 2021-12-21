@@ -1,0 +1,48 @@
+
+.backg{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+  
+}
+
+.navbar{
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  
+}
+ul li, div {
+  list-style: none;
+  padding-left: 8px;
+  
+}
+
+a {
+  color: #000;
+  font-weight: normal;
+  font-size: 18px;
+  text-decoration: none !important;
+  transition: all 0.4s ease;
+}
+a:hover {
+  color: #ffc200 !important;
+  font-size: 20px;
+  
+}
+
+.logo-title {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+
+
+

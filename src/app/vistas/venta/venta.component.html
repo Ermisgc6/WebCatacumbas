@@ -1,0 +1,297 @@
+<div class="backg">
+    <div class="container cont-princ">
+        <app-header></app-header>
+        <div class="cont-sec">
+
+            <h1 class="tit1">Realizar venta</h1>
+
+
+            <ul class="nav nav-pills mb-3 d-flex justify-content-evenly align-items-end" id="pills-tab" role="tablist">
+
+
+                <li class="nav-item col-md-4" role="presentation">
+                    <button class="nav-link active linktarg" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Entradas</button>
+                </li>
+                <li class="nav-item col-md-4" role="presentation">
+                    <button class="nav-link linktarg" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Datos</button>
+                </li>
+                <li class="nav-item col-md-4 " role="presentation">
+                    <button class="nav-link linktarg" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Pago</button>
+                </li>
+
+
+
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="text-center tit2">Elija la hora de su visita</h2>
+                            <h3 class="desc">Con el fin de tener un mejor control del aforo, deberás elegir la franja
+                                horaria en la que deseas ingresar al Museo.</h3>
+
+                            <div class="funkyradio d-flex justify-content-evenly">
+
+                                <div class="col-md-5">
+                                    <div class="funkyradio-success">
+                                        <input type="radio" name="radio" id="radio1" />
+                                        <label for="radio1">9:00 am - 10:00 am</label>
+                                    </div>
+                                    <div class="funkyradio-success">
+                                        <input type="radio" name="radio" id="radio2" checked />
+                                        <label for="radio2">10:00 am - 11:00 am</label>
+                                    </div>
+                                    <div class="funkyradio-success">
+                                        <input type="radio" name="radio" id="radio3" />
+                                        <label for="radio3">12:00 pm - 1:00 pm</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-5">
+                                    <div class="funkyradio-success">
+                                        <input type="radio" name="radio" id="radio4" />
+                                        <label for="radio4">1:00 pm - 2:00 pm</label>
+                                    </div>
+                                    <div class="funkyradio-success">
+                                        <input type="radio" name="radio" id="radio5" />
+                                        <label for="radio5">3:00 pm - 4:00 pm</label>
+                                    </div>
+                                    <div class="funkyradio-success">
+                                        <input type="radio" name="radio" id="radio6" />
+                                        <label for="radio6">----------</label>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <h2 class="text-center tit2">Escoge tus entradas</h2>
+
+                            <h3 class="desc">Selecciona el número de personas por tipo de entrada. El número máximo de
+                                entradas
+                                permitidas por transacción es 20.</h3>
+
+
+                            <div class="secc2">
+                                <div class="d-flex justify-content-between">
+                                    <h3>General</h3>
+                                    <div class="d-flex">
+                                        <p>S/ 15.00</p>
+                                        <input type="number" class="form-control inputcli" aria-label="Last name">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h3>Adulto mayor (+60 años)</h3>
+                                    <div class="d-flex">
+                                        <p class="text-center">S/ 0.00</p>
+                                        <input type="number" class="form-control inputcli" aria-label="Last name">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h3>Estudiante</h3>
+                                    <div class="d-flex">
+                                        <p class="text-center">S/ 8.00</p>
+                                        <input type="number" class="form-control inputcli" aria-label="Last name">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h3>Niño (hasta 8 años)</h3>
+                                    <div class="d-flex">
+                                        <p>S/ 0.00</p>
+                                        <input type="number" class="form-control inputcli" aria-label="Last name">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="nav nav-next  mb-3 d-flex justify-content-center" role="tablist">
+                        <button class="nav-link bouton-1" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Continuar</button>
+                    </div>
+
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                    <form class="form-cli">
+                        <h1 class="tit2">Registro de datos del cliente.</h1>
+
+                        <div class="contentform">
+
+                            <div class="leftcontact">
+                                <div class="form-group">
+                                    <p class="nom-control">Nombre<span class="requ">*</span></p>
+                                    <span class="icon-case"><i class="fa fa-male"></i></span>
+                                    <input class="inputcli" type="text" name="nom" id="nom" data-rule="required" />
+
+                                </div>
+
+                                <div class="form-group">
+                                    <p class="nom-control">Apellidos <span class="requ">*</span></p>
+                                    <span class="icon-case"><i class="fa fa-user"></i></span>
+                                    <input class="inputcli" type="text" name="prenom" id="prenom"
+                                        data-rule="required" />
+
+                                </div>
+
+                                <div class="form-group">
+                                    <p class="nom-control">E-mail <span class="requ">*</span></p>
+                                    <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                                    <input class="inputcli" type="email" name="email" id="email" data-rule="email" />
+
+                                </div>
+
+                            </div>
+
+                            <div class="rightcontact">
+
+                                <div class="form-group">
+                                    <p class="nom-control">Tipo de documento <span class="requ">*</span></p>
+                                    <span class="icon-case"><i class="fa fa-home"></i></span>
+                                    <input class="inputcli" type="text" name="society" id="society"
+                                        data-rule="required" />
+
+                                </div>
+
+                                <div class="form-group">
+                                    <p class="nom-control">Numero de documento <span class="requ">*</span></p>
+                                    <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+                                    <input class="inputcli" type="text" name="adresse" id="adresse"
+                                        data-rule="required" />
+
+                                </div>
+
+                                <div class="form-group">
+                                    <p class="nom-control">Trabajador <span class="requ">*</span></p>
+                                    <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+                                    <input class="inputcli" type="text" name="adresse" id="adresse"
+                                        data-rule="required" />
+
+                                </div>
+
+                            </div>
+
+                            
+                        </div>
+
+
+                        
+                            <button  type="submit" class="bouton-1 ">Pagar</button>
+                        
+                       
+
+                        <!-- <div class="nav nav-next  mb-3 d-flex justify-content-end" role="tablist">
+                            <button class="nav-link bouton-1" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="submit" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Pagar</button>
+                        </div> -->
+                        
+
+                    </form>
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+                    <div class="row cont-pay">
+                        <div class="col-lg-6 mx-auto">
+                            <div class="card ">
+                                <div class="card-header pay">
+                                    <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                                        <!-- Credit card form tabs -->
+                                        <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                                            <li class="nav-item"> <a data-toggle="pill" href="#credit-card"
+                                                    class="nav-link active "> <i class="fas fa-credit-card mr-2"></i>
+                                                    Tarjeta de credito </a> </li>
+                                            <li class="nav-item"> <a data-toggle="pill" href="#paypal"
+                                                    class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a>
+                                            </li>
+                                            <li class="nav-item"> <a data-toggle="pill" class="nav-link "> <i
+                                                        class="fas fa-mobile-alt mr-2"></i>Efectivo</a> </li>
+                                        </ul>
+                                    </div> <!-- End -->
+                                    <!-- Credit card form content -->
+                                    <div class="tab-content">
+                                        <!-- credit card info-->
+                                        <div id="credit-card" class="tab-pane fade show active pt-3">
+                                            <form role="form" onsubmit="event.preventDefault()">
+                                                <div class="form-group"> <label for="username">
+                                                        <h3>Propietario de la tarjeta</h3>
+                                                    </label> <input type="text" name="username" placeholder="Nombre "
+                                                        required class="form-control "> </div>
+                                                <div class="form-group"> <label for="cardNumber">
+                                                        <h3> Número de tarjeta</h3>
+                                                    </label>
+                                                    <div class="input-group"> <input type="text" name="cardNumber"
+                                                            placeholder="Número" class="form-control " required>
+                                                        <div class="input-group-append"> <span
+                                                                class="input-group-text text-muted">
+                                                                <i class="fab fa-cc-visa mx-1"></i>
+                                                                <i class="fab fa-cc-mastercard mx-1"></i>
+                                                                <i class="fab fa-cc-amex mx-1"></i> </span>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-8">
+                                                        <div class="form-group"> <label><span class="hidden-xs">
+                                                                    <h3>Fecha de caducidad</h3>
+                                                                </span></label>
+                                                            <div class="input-group"> <input type="number"
+                                                                    placeholder="MM" name="" class="form-control"
+                                                                    required> <input type="number" placeholder="YY"
+                                                                    name="" class="form-control" required> </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group mb-4"> <label data-toggle="tooltip"
+                                                                title="Three digit CV code on the back of your card">
+                                                                <h3>CVV <i class="fa fa-question-circle d-inline"></i>
+                                                                </h3>
+                                                            </label> <input type="text" required class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer"> <button type="button"
+                                                        class="subscribe btn btn-primary btn-block shadow-sm"> Confirmar
+                                                        pago </button></div>
+                                            </form>
+                                        </div>
+                                    </div> <!-- End -->
+
+                                    <!-- End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<app-footer></app-footer>
