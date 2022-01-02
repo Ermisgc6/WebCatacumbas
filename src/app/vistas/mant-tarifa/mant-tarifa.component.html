@@ -1,1 +1,158 @@
-<p>mant-tarifa works!</p>
+<div class="backg">
+    <div class="container cont-princ">
+        <app-header></app-header>
+        <div class="cont-sec">
+
+
+            <div class="cont-titulo">
+                <h1 class="tit1">Tarifas</h1>
+            </div>
+
+
+            <div class="">
+
+                <div class="cont-add d-flex justify-content-between align-items-center">
+
+                    <button type="button" class="btn bouton-1" data-bs-toggle="modal" data-bs-target="#modaladd"
+                        data-bs-whatever="@mdo">Agregar</button>
+
+
+                    <form action="" class="d-flex align-items-center">
+                        <input type="text" class="form-control" id="search" placeholder="Bucar tarifa">
+                        <button class="btn bouton-2" type="submit">Buscar</button>
+                    </form>
+                </div>
+
+                <!-- MODAL FORMULARIO AGREGAR -->
+                <div class="modal fade" id="modaladd" tabindex="-1" aria-labelledby="modaladd" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-center" id="modaladdLabel">Registrar</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                        <div class="">
+                                            <label for="message-text" class="col-form-label">Descripción</label>
+                                            <textarea type="text" class="form-control" id="message-text"></textarea>
+                                        </div>
+        
+                                        <div class="">
+                                            <label for="message-text" class="col-form-label">Precio</label>
+                                            <input type="email" class="form-control" id="message-text">
+                                        </div>
+                                    
+                                </form>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button" class="btn bouton-2" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn bouton-1">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-mant">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="p-3 px-3 text-uppercase">Item</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="py-2 text-uppercase">Descripción</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="py-2 text-uppercase">Precio</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light text-center">
+                                <div class="py-2 text-uppercase">Acciones</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle"><strong>1</strong></td>
+                            <td class="align-middle"><strong>General</strong></td>
+                            <td class="align-middle"><strong>S/ 15.00</strong></td>
+                            <td class="align-middle td-acc ">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn-delete"><i class="fas fa-trash-alt"></i></a>
+
+                                    <button type="button" class="btn-edit" data-bs-toggle="modal"
+                                        data-bs-target="#modalupdate" data-bs-whatever="@mdo"><i
+                                            class="fas fa-pen-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle"><strong>2</strong></td>
+                            <td class="align-middle"><strong>Adulto mayor (+60 años)</strong></td>
+                            <td class="align-middle"><strong>S/ 0.00</strong></td>
+                            <td class="align-middle td-acc ">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn-delete"><i class="fas fa-trash-alt"></i></a>
+
+                                    <button type="button" class="btn-edit" data-bs-toggle="modal"
+                                        data-bs-target="#modalupdate" data-bs-whatever="@mdo"><i
+                                            class="fas fa-pen-alt"></i></button>
+                                </div>
+
+                            </td>
+
+                        </tr>
+                        <tr>  
+                            <td class="align-middle"><strong>3</strong></td>
+                            <td class="align-middle"><strong>Estudiante</strong></td>
+                            <td class="align-middle"><strong>S/ 8.00</strong></td>
+                            <td class="align-middle td-acc ">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn-delete"><i class="fas fa-trash-alt"></i></a>
+
+                                    <button type="button" class="btn-edit" data-bs-toggle="modal"
+                                        data-bs-target="#modalupdate" data-bs-whatever="@mdo"><i
+                                            class="fas fa-pen-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- MODAL FORMULARIO EDITAR -->
+            <div class="modal fade" id="modalupdate" tabindex="-1" aria-labelledby="modalupdate" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="modalupdateLabel">Editar</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="">
+                                    <label for="message-text" class="col-form-label">Descripción</label>
+                                    <textarea type="text" class="form-control" id="message-text"></textarea>
+                                </div>
+
+                                <div class="">
+                                    <label for="message-text" class="col-form-label">Precio</label>
+                                    <input type="email" class="form-control" id="message-text">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bouton-2" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn bouton-1 ">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

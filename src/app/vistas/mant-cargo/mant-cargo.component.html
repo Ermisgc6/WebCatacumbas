@@ -1,40 +1,158 @@
-<div class="container">
+<div class="backg">
+    <div class="container cont-princ">
+        <app-header></app-header>
+        <div class="cont-sec">
 
-    <div >
 
-    </div>
+            <div class="cont-titulo">
+                <h1 class="tit1">Cargos</h1>
+            </div>
 
 
-    <div>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            data-bs-whatever="@mdo"></button>
+            <div class="">
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="recipient-name">
+                <div class="cont-add d-flex justify-content-between align-items-center">
+
+                    <button type="button" class="btn bouton-1" data-bs-toggle="modal" data-bs-target="#modaladd"
+                        data-bs-whatever="@mdo">Agregar</button>
+
+
+                    <form action="" class="d-flex align-items-center">
+                        <input type="text" class="form-control" id="search" placeholder="Bucar cargo">
+                        <button class="btn bouton-2" type="submit">Buscar</button>
+                    </form>
+                </div>
+
+                <!-- MODAL FORMULARIO AGREGAR -->
+                <div class="modal fade" id="modaladd" tabindex="-1" aria-labelledby="modaladd" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-center" id="modaladdLabel">Registrar</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
+                            <div class="modal-body">
+                                <form>
+                                        <div class="">
+                                            <label for="message-text" class="col-form-label">Denominacion</label>
+                                            <input type="text" class="form-control" id="message-text">
+                                        </div>
+        
+                                        <div class="">
+                                            <label for="message-text" class="col-form-label">Descripción</label>
+                                            <textarea type="email" class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    
+                                </form>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button" class="btn bouton-2" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn bouton-1">Guardar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="table-responsive">
+                <table class="table table-mant">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="p-3 px-3 text-uppercase">Item</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="py-2 text-uppercase"> Descripción</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="py-2 text-uppercase">Descripción</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light text-center">
+                                <div class="py-2 text-uppercase">Acciones</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle"><strong>1</strong></td>
+                            <td class="align-middle"><strong>Administrador</strong></td>
+                            <td class="align-middle"><strong>Administrador con acceso total a la informacion</strong></td>
+                            <td class="align-middle td-acc ">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn-delete"><i class="fas fa-trash-alt"></i></a>
+
+                                    <button type="button" class="btn-edit" data-bs-toggle="modal"
+                                        data-bs-target="#modalupdate" data-bs-whatever="@mdo"><i
+                                            class="fas fa-pen-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle"><strong>2</strong></td>
+                            <td class="align-middle"><strong>Auxiliar</strong></td>
+                            <td class="align-middle"><strong>Auxiliar de atencion al publico</strong></td>
+                            <td class="align-middle td-acc ">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn-delete"><i class="fas fa-trash-alt"></i></a>
+
+                                    <button type="button" class="btn-edit" data-bs-toggle="modal"
+                                        data-bs-target="#modalupdate" data-bs-whatever="@mdo"><i
+                                            class="fas fa-pen-alt"></i></button>
+                                </div>
+
+                            </td>
+
+                        </tr>
+                        <tr>  
+                            <td class="align-middle"><strong>3</strong></td>
+                            <td class="align-middle"><strong>Guia</strong></td>
+                            <td class="align-middle"><strong>Guia de recorridos para reservas</strong></td>
+                            <td class="align-middle td-acc ">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn-delete"><i class="fas fa-trash-alt"></i></a>
+
+                                    <button type="button" class="btn-edit" data-bs-toggle="modal"
+                                        data-bs-target="#modalupdate" data-bs-whatever="@mdo"><i
+                                            class="fas fa-pen-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- MODAL FORMULARIO EDITAR -->
+            <div class="modal fade" id="modalupdate" tabindex="-1" aria-labelledby="modalupdate" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="modalupdateLabel">Editar</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="">
+                                    <label for="message-text" class="col-form-label">Denominacion</label>
+                                    <input type="text" class="form-control" id="message-text">
+                                </div>
+
+                                <div class="">
+                                    <label for="message-text" class="col-form-label">Descripción</label>
+                                    <textarea type="email" class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bouton-2" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn bouton-1 ">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
-
 </div>

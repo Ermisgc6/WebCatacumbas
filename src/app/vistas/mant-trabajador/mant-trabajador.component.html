@@ -1,1 +1,230 @@
-<p>mant-trabajador works!</p>
+<div class="backg">
+    <div class="container cont-princ">
+        <app-header></app-header>
+        <div class="cont-sec">
+
+
+            <div class="cont-titulo">
+                <h1 class="tit1">Trabajadores</h1>
+            </div>
+
+
+            <div class="">
+
+                <div class="cont-add d-flex justify-content-between align-items-center">
+
+                    <button type="button" class="btn bouton-1" data-bs-toggle="modal" data-bs-target="#modaladd"
+                        data-bs-whatever="@mdo">Agregar</button>
+
+
+                    <form action="" class="d-flex align-items-center">
+                        <input type="text" class="form-control" id="search" placeholder="Bucar trabajador">
+                        <button class="btn bouton-2" type="submit">Buscar</button>
+                    </form>
+                </div>
+
+                <!-- MODAL FORMULARIO AGREGAR -->
+                <div class="modal fade" id="modaladd" tabindex="-1" aria-labelledby="modaladd" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-center" id="modaladdLabel">Registrar</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Nombre </label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Apellidos</label>
+                                        <input type="text" class="form-control" id="message-text">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Email</label>
+                                        <input type="email" class="form-control" id="message-text">
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="message-text" class="col-form-label">Telefono</label>
+                                            <input type="number" class="form-control" id="message-text">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="message-text" class="col-form-label">Cargo</label>
+                                            <select class="form-select">
+                                                <option autofocus>-Elija un cargo-</option>
+                                                <option value="1">Auxiliar</option>
+                                                <option value="2">Guia</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button" class="btn bouton-2" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn bouton-1">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-mant">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="p-3 px-3 text-uppercase">Nombres</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="py-2 text-uppercase">Apellidos</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="py-2 text-uppercase">Email</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="py-2 text-uppercase">Telefono</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light text-center">
+                                <div class="py-2 text-uppercase">Acciones</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div class="p-2">
+                                    <img src="https://i.ibb.co/VQ9T21R/avmen.png" alt="" width="55" class="img-fluid img-table">
+                                    <div class="ml-3 d-inline-block align-middle ">
+                                        <h4 class="mb-0"> <strong>Alejandro</strong></h4>
+                                        <span class="text-muted font-weight-normal font-italic">Cargo: Administrador</span>
+                                    </div>
+                                </div>
+
+                            </th> 
+                            <td class="align-middle"><strong>Jennings Mason</strong></td>
+                            <td class="align-middle"><strong>alejandro@gmail.com</strong></td>
+                            <td class="align-middle"><strong>925632547</strong></td>
+                            <td class="align-middle td-acc ">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn-delete"><i class="fas fa-trash-alt"></i></a>
+
+                                    <button type="button" class="btn-edit" data-bs-toggle="modal"
+                                        data-bs-target="#modalupdate" data-bs-whatever="@mdo"><i
+                                            class="fas fa-pen-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="p-2">
+                                    <img src="https://i.ibb.co/QY9HRSm/avwoman.png" alt="" width="55" class="img-fluid img-table">
+                                    <div class="ml-3 d-inline-block align-middle">
+                                        <h4 class="mb-0"><strong>Ana</strong></h4>
+                                        <span
+                                            class="text-muted font-weight-normal font-italic">Cargo: Auxiliar </span>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="align-middle"><strong>Humphrey Wong</strong></td>
+                            <td class="align-middle"><strong>anna@hotmail.com</strong></td>
+                            <td class="align-middle"><strong>941256345</strong></td>
+                            <td class="align-middle td-acc ">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn-delete"><i class="fas fa-trash-alt"></i></a>
+
+                                    <button type="button" class="btn-edit" data-bs-toggle="modal"
+                                        data-bs-target="#modalupdate" data-bs-whatever="@mdo"><i
+                                            class="fas fa-pen-alt"></i></button>
+                                </div>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="p-2">
+                                    <img src="https://i.ibb.co/VQ9T21R/avmen.png" alt="" width="55" class="img-fluid img-table">
+                                    <div class="ml-3 d-inline-block align-middle">
+                                        <h4 class="mb-0"> <strong>Juan</strong></h4><span
+                                            class="text-muted font-weight-normal font-italic">Cargo: Auxiliar</span>
+                                    </div>
+                                </div>
+
+                            </th>   
+                            <td class="align-middle"><strong>Campos Wood</strong></td>
+                            <td class="align-middle"><strong>juan@Gmail.com</strong></td>
+                            <td class="align-middle"><strong>963254156</strong></td>
+                            <td class="align-middle td-acc ">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn-delete"><i class="fas fa-trash-alt"></i></a>
+
+                                    <button type="button" class="btn-edit" data-bs-toggle="modal"
+                                        data-bs-target="#modalupdate" data-bs-whatever="@mdo"><i
+                                            class="fas fa-pen-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- MODAL FORMULARIO EDITAR -->
+            <div class="modal fade" id="modalupdate" tabindex="-1" aria-labelledby="modalupdate" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="modalupdateLabel">Editar</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Nombre </label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Apellidos</label>
+                                    <input type="text" class="form-control" id="message-text">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Email</label>
+                                    <input type="email" class="form-control" id="message-text">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="message-text" class="col-form-label">Telefono</label>
+                                        <input type="number" class="form-control" id="message-text">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="message-text" class="col-form-label">Cargo</label>
+                                        <select class="form-select">
+                                            <option autofocus>-Elija un cargo-</option>
+                                            <option value="1">Auxiliar</option>
+                                            <option value="2">Guia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bouton-2" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn bouton-1 ">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

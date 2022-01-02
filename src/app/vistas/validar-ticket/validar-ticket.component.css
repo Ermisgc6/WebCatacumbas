@@ -1,0 +1,184 @@
+.backg{
+    width: 100%;
+    background-color: inherit;
+  
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .cont-princ {
+    padding: 0; 
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+  
+  .cont-sec{
+    padding: 0;
+  }
+  
+  .cont-titulo{
+  background: #F5F8FD;
+  padding: 10px;
+  }
+  
+  .tit1 {
+      text-align:center; 
+      color: rgb(25, 25, 26);
+      text-shadow: 1px 1px 0px #FFF;
+      margin:20px 0px 20px 0px
+  }
+  
+
+
+  
+  
+  .bouton-1{
+    background-color: #81BDA4;
+    color: #FFF;
+    text-align: center;
+    max-width: 100%;
+    height: 40px;
+    border:0;
+    padding: 8px 20px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .bouton-1:hover{
+    background-color: #69a19f;
+  }
+  
+  .bouton-2{
+      background-color: #6b727e;
+      color: #FFF;
+      text-align: center;
+      max-width: 35%;
+      border:0;
+      padding: 6px 10px;
+      border-radius: 5px 5px 5px 5px;
+      cursor: pointer;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-size: 18px;
+      margin-left: 5px;
+  }
+  
+  .bouton-2:hover{
+    background-color: #575c66;
+  }
+  
+
+  
+  .col-left{
+    background-color: rgb(39, 51, 51);
+  }
+  
+  .col-rigth{
+    background-color: rgb(95, 69, 61);
+  }
+
+  .box-search{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    width: 500px;
+    border-radius: 5px;
+  }
+  .box-data{
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+
+  .box-data2{
+    padding: 30px;
+  }
+
+  /* inputs */
+
+  .text-input{ 
+    position: relative;
+    width: 100%;
+    margin-right: 5px;
+   }
+    
+    input[type="text"]{
+    display: inline-block;
+    width: 90%;
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 10px 10px 10px 100px;
+    transition: all 0.1s ease-out;
+    }
+    
+    input[type="text"] + label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 3px 0 0 3px;
+    padding: 0 20px;
+    background: #fa8072;
+    transform: translateZ(0) translateX(0);
+    transition: all 0.3s ease-in;
+    transition-delay: 0.2s;
+    }
+    
+    input[type="text"]:focus + label{
+    transform: translateY(-120%) translateX(0%);
+    border-radius: 3px;
+    transition: all 0.1s ease-out;
+    }
+    
+    input[type="text"]:focus{
+    padding: 10px;
+    transition: all 0.3s ease-out;
+    transition-delay: 0.2s;
+    }
+
+    .data{
+      padding: 10px;
+    }
+
+    .tabletarifa{
+      width: 100%;
+    }
+
+    .circle{
+      padding-top: 0px;
+    }
+    .cir1{
+      padding: 14px;
+      border-radius: 50%;
+      position: relative;
+      right: 13px;
+      background-color: rgb(95, 69, 61);
+    }
+
+    .cir2{
+      padding: 14px;
+      border-radius: 50%;
+      position: relative;
+      left: 13px;
+      background-color: rgb(95, 69, 61);
+    }
+    .line{
+      height: 1px;
+      background-color: rgb(197, 196, 196);
+      width: 100%;
+    }

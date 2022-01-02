@@ -1,78 +1,177 @@
-<div class="container ">
-    <!-- Shopping cart table -->
-    <div class="table-responsive">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col" class="border-0 bg-light">
-                        <div class="p-2 px-3 text-uppercase">Product</div>
-                    </th>
-                    <th scope="col" class="border-0 bg-light">
-                        <div class="py-2 text-uppercase">Price</div>
-                    </th>
-                    <th scope="col" class="border-0 bg-light">
-                        <div class="py-2 text-uppercase">Quantity</div>
-                    </th>
-                    <th scope="col" class="border-0 bg-light">
-                        <div class="py-2 text-uppercase">Remove</div>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row" class="border-0">
-                        <div class="p-2">
-                            <img src="https://bootstrapious.com/i/snippets/sn-cart/product-1.jpg" alt="" width="70"
-                                class="img-fluid rounded shadow-sm">
-                            <div class="ml-3 d-inline-block align-middle">
-                                <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Timex Unisex
-                                        Originals</a></h5><span
-                                    class="text-muted font-weight-normal font-italic d-block">Category:
-                                    Watches</span>
+<div class="backg">
+    <div class="container cont-princ">
+        <app-header></app-header>
+        <div class="cont-sec">
+
+
+            <div class="cont-titulo">
+                <h1 class="tit1">USUARIOS</h1>
+            </div>
+
+
+            <div class="">
+
+                <div class="cont-add d-flex justify-content-between align-items-center">
+
+                    <button type="button" class="btn bouton-1" data-bs-toggle="modal" data-bs-target="#modaladd"
+                        data-bs-whatever="@mdo">Agregar</button>
+
+
+                    <form action="" class="d-flex align-items-center">
+                        <input type="text" class="form-control" id="search" placeholder="Bucar usuario">
+                        <button class="btn bouton-2" type="submit">Buscar</button>
+                    </form>
+                </div>
+
+                <!-- MODAL FORMULARIO AGREGAR -->
+                <div class="modal fade" id="modaladd" tabindex="-1" aria-labelledby="modaladd" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-center" id="modaladdLabel">Registrar</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Usuario </label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Contraseña</label>
+                                        <input class="form-control" id="message-text">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Trabajador</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button" class="btn bouton-2"data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn bouton-1">Guardar</button>
                             </div>
                         </div>
-                    </th>
-                    <td class="border-0 align-middle"><strong>$79.00</strong></td>
-                    <td class="border-0 align-middle"><strong>3</strong></td>
-                    <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
-                </tr>
-                <tr>
-                    <th scope="row">
-                        <div class="p-2">
-                            <img src="https://bootstrapious.com/i/snippets/sn-cart/product-2.jpg" alt="" width="70"
-                                class="img-fluid rounded shadow-sm">
-                            <div class="ml-3 d-inline-block align-middle">
-                                <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">Lumix
-                                        camera lense</a></h5><span
-                                    class="text-muted font-weight-normal font-italic">Category:
-                                    Electronics</span>
-                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="table-responsive">
+                <table class="table table-mant">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="p-2 px-3 text-uppercase">Usuario</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="py-2 text-uppercase">Contraseña</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="py-2 text-uppercase">Trabajador</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light text-center">
+                                <div class="py-2 text-uppercase">Acciones</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div class="p-2">
+                                    <img src="https://i.ibb.co/VQ9T21R/avmen.png" alt="" width="70" class="img-fluid ">
+                                    <div class="ml-3 d-inline-block align-middle">
+                                        <h5 class="mb-0">
+                                            <h4 class="text-dark ">Alejandro</h4>
+                                        </h5><span class="text-muted font-weight-normal font-italic d-block">Perfil:
+                                            Administrador</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="align-middle"><strong>********************</strong></td>
+                            <td class="align-middle"><strong>Alejandro Villa</strong></td>
+                            <td class="align-middle td-acc ">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn-delete"><i class="fas fa-trash-alt"></i></a>
+
+                                    <button type="button" class="btn-edit" data-bs-toggle="modal"
+                                        data-bs-target="#modalupdate" data-bs-whatever="@mdo"><i class="fas fa-pen-alt"></i></button>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="p-2">
+                                    <img src="https://i.ibb.co/QY9HRSm/avwoman.png" alt="" width="70"
+                                        class="img-fluid rounded shadow-sm">
+                                    <div class="ml-3 d-inline-block align-middle">
+                                        <h5 class="mb-0">Ana</h5><span
+                                            class="text-muted font-weight-normal font-italic">Perfil: Auxiliar </span>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="align-middle"><strong>********************</strong></td>
+                            <td class="align-middle"><strong>Ana Barrios</strong></td>
+                            <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="p-2">
+                                    <img src="https://i.ibb.co/VQ9T21R/avmen.png" alt="" width="70"
+                                        class="img-fluid rounded shadow-sm">
+                                    <div class="ml-3 d-inline-block align-middle">
+                                        <h4 class="mb-0"> Juan</h4><span
+                                            class="text-muted font-weight-normal font-italic">Perfil: Auxiliar</span>
+                                    </div>
+                                </div>
+                            <td class="align-middle"><strong>********************</strong></td>
+                            <td class="align-middle"><strong>Juan Besos</strong></td>
+                            <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- MODAL FORMULARIO EDITAR -->
+            <div class="modal fade" id="modalupdate" tabindex="-1" aria-labelledby="modalupdate" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="modalupdateLabel">Registrar</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </th>
-                    <td class="align-middle"><strong>$79.00</strong></td>
-                    <td class="align-middle"><strong>3</strong></td>
-                    <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">
-                        <div class="p-2">
-                            <img src="https://bootstrapious.com/i/snippets/sn-cart/product-3.jpg" alt="" width="70"
-                                class="img-fluid rounded shadow-sm">
-                            <div class="ml-3 d-inline-block align-middle">
-                                <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Gray Nike
-                                        running shoe</a></h5><span
-                                    class="text-muted font-weight-normal font-italic">Category:
-                                    Fashion</span>
-                            </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Usuario </label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Contraseña</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Trabajador</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
                         </div>
-                    <td class="align-middle"><strong>$79.00</strong></td>
-                    <td class="align-middle"><strong>3</strong></td>
-                    <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bouton-2" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn bouton-1 ">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
     </div>
-    <!-- End -->
 </div>
