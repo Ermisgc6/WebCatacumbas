@@ -5,14 +5,15 @@
                 <p class="tituloLog text-center">Iniciar sesión en la web del museo</p>
                
                
+                <!-- LOGIN FORM -->
                 <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
 
                     <div class="form-group form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Your User" formControlName="user">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Your User" formControlName="username">
                         <label class="lblUser"  for="floatingInput">Usuario</label>
                     </div>
                     <div class="form-group form-floating">
-                        <input type="password" class="form-control " id="floatingPassword" placeholder="Your Password" formControlName="pass">
+                        <input type="password" class="form-control " id="floatingPassword" placeholder="Your Password" formControlName="password">
                         <label class="lblPass" for="floatingPassword">Contraseña</label>
                     </div>
 
@@ -25,8 +26,10 @@
                             <a href="" class="ForgetPwd">Olvidó su contraseña?</a>
                         </div>
                     </div>
-
                 </form>
+
+            <!-- //LOGIN FORM -->
+
             </div>
             <div class="col-md-5 login-form-2">
                 <img src="assets/log2.png" width="380px" srcset="">

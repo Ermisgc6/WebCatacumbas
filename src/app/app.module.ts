@@ -9,6 +9,8 @@ import { FooterComponent } from './plantillas/footer/footer.component';
 
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { VentaComponent } from './vistas/venta/venta.component';
 import { ValidarTicketComponent } from './vistas/validar-ticket/validar-ticket.component';
 import { MantTarifaComponent } from './vistas/mant-tarifa/mant-tarifa.component';
@@ -37,7 +39,8 @@ import { MantCargoComponent } from './vistas/mant-cargo/mant-cargo.component';
     AppRoutingModule,
     BrowserAnimationsModule, 
     ReactiveFormsModule, 
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

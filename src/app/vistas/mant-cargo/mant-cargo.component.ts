@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ApiService } from '../../servicios/api/api.service'
+import { ListacargosI } from '../../modelo/listacargos.interface'
+
+
 @Component({
   selector: 'app-mant-cargo',
   templateUrl: './mant-cargo.component.html',
@@ -7,9 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MantCargoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:ApiService) { }
 
   ngOnInit(): void {
+
+    this.api.getAllCargos().subscribe(data => {
+      console.log(data)
+    })
+
   }
 
 }

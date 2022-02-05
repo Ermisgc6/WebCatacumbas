@@ -25,19 +25,6 @@ ul li, div {
   
 }
 
-a {
-  color: #000;
-  font-weight: normal;
-  font-size: 18px;
-  text-decoration: none !important;
-  transition: all 0.4s ease;
-}
-a:hover {
-  color: #ffc200 !important;
-  font-size: 20px;
-  
-}
-
 .logo-title {
   font-size: 25px;
   font-weight: 900;
@@ -45,7 +32,21 @@ a:hover {
   padding-left: 20PX;
 }
 .nav-link{
-color: rgb(74, 73, 83);
+  color: #000;
+  font-weight: normal;
+  font-size: 18px;
+  text-decoration: none !important;
+  transition: all 0.4s ease;
+}
+
+.nav-link:hover {
+  color: #ffc200 !important;
+  font-size: 20px;
+}
+
+.user{
+  font-size: 16px;
+  text-decoration: none;
 }
 
 

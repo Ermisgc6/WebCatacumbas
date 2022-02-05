@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { FormGroup, FormControl, Validators } from '@angular/forms'
-
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { ApiService } from '../../servicios/api/api.service'
+import { LoginI } from '../../modelo/login.interface'
 
 @Component({
   selector: 'app-login',
@@ -16,14 +17,17 @@ export class LoginComponent implements OnInit {
   })
 
 
-
-  constructor() { }
+  constructor( private api:ApiService) { }
 
   ngOnInit(): void {
   }
 
-  onLogin(form: FormData){
-    console.log(form)
+  onLogin(form: LoginI){
+
+    this.api.LoginUser(form).subscribe(data =>{
+      console.log(data);
+    })
+    
   }
 
 
